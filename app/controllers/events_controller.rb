@@ -11,9 +11,9 @@ class EventsController < ApplicationController
   def create
     if @event.valid?
       @event.save
-      redirect_to show(@event)
+      render :json => 'success'
     else
-      # return error
+      render :json => @event.errors
     end
   end
 
