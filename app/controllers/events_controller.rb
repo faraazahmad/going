@@ -22,6 +22,12 @@ class EventsController < ApplicationController
   end
 
   def update
+    if @event.valid?
+      @event = Event.update_attributes(event_params)
+      render :json => 'success'
+    else
+      render :json => @event.errors
+    end
   end
 
   def destroy
