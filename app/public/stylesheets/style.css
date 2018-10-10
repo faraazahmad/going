@@ -1,0 +1,30 @@
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.navbar {
+  font-size: 1.25em;
+  padding: 1em;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero-tiles {
+  padding: 1em;
+  margin: auto;
+  position: absolute;
+  bottom: -3em;
+  width: 100%;
+}
+
+.hero-tiles * {
+  color: #1b1b1b !important;
+}
+
+.hero-tiles .card {
+  border-radius: 0.5em;
+  width: 80%;
+  margin: auto;
+}
