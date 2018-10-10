@@ -7,24 +7,38 @@
   padding: 1em;
 }
 
-.hero {
-  position: relative;
-}
-
 .hero-tiles {
   padding: 1em;
-  margin: auto;
-  position: absolute;
-  bottom: -3em;
-  width: 100%;
 }
 
-.hero-tiles * {
+@media screen and (min-width: 768px) {
+  .hero-tiles {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5em;
+  }
+}
+
+.hero-tiles .card {
+  box-shadow: 0 0 10em 5px rgba(0,0,0,0.15);
+}
+
+.hero-tiles .title, .hero-tiles .subtitle, .hero-tiles p {
   color: #1b1b1b !important;
 }
 
 .hero-tiles .card {
   border-radius: 0.5em;
-  width: 80%;
+  width: 95%;
   margin: auto;
+}
+
+.hero-tiles .card .event-image {
+  text-align: center;
+  padding: 1rem;
+}
+
+.hero-tiles .card .subtitle {
+  font-weight: 400;
+  font-size: 2em;
 }
