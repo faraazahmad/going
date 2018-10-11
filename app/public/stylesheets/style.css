@@ -2,6 +2,10 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+body, html {
+  background-color: #fbfbfb;
+}
+
 .navbar {
   font-size: 1.25em;
   padding: 1em;
