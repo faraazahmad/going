@@ -7,6 +7,10 @@
   padding: 1em;
 }
 
+.card {
+  border-radius: 0.5rem;
+}
+
 .hero-tiles {
   padding: 1em;
 }
@@ -17,9 +21,13 @@
     margin-right: auto;
     margin-top: -5em;
   }
+
+  .auth-area {
+    max-width: 25%;
+  }
 }
 
-.hero-tiles .card {
+.hero-tiles .card  {
   box-shadow: 0 0 10em 5px rgba(0,0,0,0.15);
 }
 
@@ -28,7 +36,6 @@
 }
 
 .hero-tiles .card {
-  border-radius: 0.5em;
   width: 95%;
   margin: auto;
 }
@@ -41,4 +48,25 @@
 .hero-tiles .card .subtitle {
   font-weight: 400;
   font-size: 2em;
+}
+
+.auth-area-wrapper {
+  width: 100%;
+  bottom: 0 !important;
+  height: inherit;
+  background-color: #fbfbfb;
+}
+
+.auth-area {
+  margin: auto;
+  padding: 1rem;
+}
+
+.auth-area .title {
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+
+.auth-area .card {
+  box-shadow: 0 0 2.5em 1px rgba(0,0,0,0.05);
 }
